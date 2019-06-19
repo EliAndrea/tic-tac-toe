@@ -9,6 +9,7 @@
   width: 400px;
   background-color: #4a453f;
   margin: auto;
+  margin-top: 60px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -19,20 +20,19 @@
 }
 .seleccionSimbolo{
   height: 120px;
-}
-h3{
-  margin-top: 0px;
+  padding-top: 20px;
 }
 .titulo{
-  font-size: 30px;
+  font-size: 45px;
 }
 .subtitulo{
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
 }
 .encabezado{
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
+  margin-top: 0px;
 }
 .uno{
   float: left;
@@ -57,11 +57,13 @@ input{
   height: 300px;
   margin: auto;
   margin-top: 15px;
+  margin-bottom: 25px;
   font-family: 'Righteous', cursive;
 }
 .fila{
   width: 302px;
   height: 100px;
+  display: flex;
 }
 .segunda{
   border-top: 1px solid #696662;
@@ -76,6 +78,7 @@ input{
   height: 100px;
   display: inline-block;
   font-size: 80px;
+  font-family: 'Nunito', sans-serif;
 }
 .botonReinicio{
   font-family: 'Press Start 2P', cursive;

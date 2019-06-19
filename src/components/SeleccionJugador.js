@@ -5,13 +5,13 @@ export class SeleccionJugador extends Component {
         super(props);
         this.state = {
             jugador: ""
-        }
+        };
     }
     render(){
         return(
             <div>
                 <h2 className= "subtitulo">Selección de jugadores</h2>
-                <div className= "caja ingresojugadores">
+                {/*<div className= "caja ingresojugadores">
                     <h3 className="encabezado">Ingrese los nombres de los jugadores:</h3>
                     <div className="jugador uno">
                         <p>Player 1</p>
@@ -21,7 +21,7 @@ export class SeleccionJugador extends Component {
                         <p>Player 2</p>
                         <input type= "text"/>
                     </div>    
-                </div>
+                </div>*/}
                 <div className="caja seleccionSimbolo">
                     <h3 className="encabezado">Seleccione el simbolo del jugador 1:</h3>
                     <button onClick={()=>{

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Casilla from './Casilla.js'
+import Casilla from './Casilla.js';
 
 export class Juego extends Component{
     constructor(props){
@@ -54,16 +54,6 @@ export class Juego extends Component{
                     ) : (
                         <h2 className="subtitulo">El ganador es {this.state.ganador}!</h2>
                     )}
-                    <button className="botonReinicio" onClick={()=> {
-                        this.props.reiniciar();
-                        this.setState({
-                            marcas: [["", "", ""], ["", "", ""], ["", "", ""]],
-                            ganador: ""            
-                            });
-                        }
-                    }> 
-                        Reiniciar Juego
-                    </button>
                 </div>    
                 <div className="tablero">
                     <div className= "primera fila">
@@ -82,6 +72,17 @@ export class Juego extends Component{
                         <Casilla className="" marca={this.state.marcas[2][2]} onClick={()=>this.marcarJugada(2,2)}/>
                     </div>
                 </div>
+                <button className="botonReinicio" onClick={()=> {
+                    this.props.reiniciar();
+                    this.setState({
+                        marcas: [["", "", ""], ["", "", ""], ["", "", ""]],
+                        ganador: ""            
+                        });
+                    }
+                }> 
+                    Reiniciar Juego
+                </button>
             </div>
-    )}
+        );
+    }
 }

@@ -27,7 +27,7 @@ class App extends Component {
   render(){
     return(
       <div className="App">
-        <h1 className= "titulo">Tic Tac Toe #</h1>
+        <h1 className= "titulo">Tic Tac Toe</h1>
         {this.state.mostrarTablero ? (
           <Juego reiniciar={this.reiniciarPartida} jugador={this.state.jugador} cambiarJugador={this.seleccionarJugador}/>
         ) : (
